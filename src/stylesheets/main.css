@@ -69,9 +69,13 @@ table {
     margin-right: 20px;
     border-style: none;
     border-radius: 6px;
-    border-bottom: 2px solid transparent; }
+    border-bottom: 2px solid transparent;
+    position: relative; }
     #header nav button:hover {
       border-bottom: 2px solid white; }
+    #header nav button:active {
+      top: 1px;
+      border-bottom: 1px solid white; }
     #header nav button span {
       font-size: 1.25rem; }
 
@@ -89,19 +93,7 @@ body {
 
 /* GLOBAL */
 body {
-  font-family: 'Roboto', sans-serif;
-  -o-transition: color .2s ease-out, background 2s ease-in;
-  -ms-transition: color .2s ease-out, background 2s ease-in;
-  -moz-transition: color .2s ease-out, background 2s ease-in;
-  -webkit-transition: color .2s ease-out, background 2s ease-in;
-  /* ...and now override with proper CSS property */
-  transition: color .2s ease-out, background 2s ease-in;
-  -o-transition: border .2s ease-out, background 2s ease-in;
-  -ms-transition: border .2s ease-out, background 2s ease-in;
-  -moz-transition: border .2s ease-out, background 2s ease-in;
-  -webkit-transition: border .2s ease-out, background 2s ease-in;
-  /* ...and now override with proper CSS property */
-  transition: border .2s ease-out, background 2s ease-in; }
+  font-family: 'Roboto', sans-serif; }
 
 #header {
   grid-column: 1/16; }
@@ -109,9 +101,34 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start; }
+    #header nav a {
+      -o-transition: color .2s ease-out, background .1s ease-in;
+      -ms-transition: color .2s ease-out, background .1s ease-in;
+      -moz-transition: color .2s ease-out, background .1s ease-in;
+      -webkit-transition: color .2s ease-out, background .1s ease-in;
+      /* ...and now override with proper CSS property */
+      transition: color .2s ease-out, background .1s ease-in;
+      -o-transition: border .2s ease-out, background .1s ease-in;
+      -ms-transition: border .2s ease-out, background .1s ease-in;
+      -moz-transition: border .2s ease-out, background .1s ease-in;
+      -webkit-transition: border .2s ease-out, background .1s ease-in;
+      /* ...and now override with proper CSS property */
+      transition: border .2s ease-out, background .1s ease-in; }
     #header nav button {
       background: #5c73c2;
-      cursor: pointer; }
+      cursor: pointer;
+      -o-transition: color .2s ease-out, background .1s ease-in;
+      -ms-transition: color .2s ease-out, background .1s ease-in;
+      -moz-transition: color .2s ease-out, background .1s ease-in;
+      -webkit-transition: color .2s ease-out, background .1s ease-in;
+      /* ...and now override with proper CSS property */
+      transition: color .2s ease-out, background .1s ease-in;
+      -o-transition: border .2s ease-out, background .1s ease-in;
+      -ms-transition: border .2s ease-out, background .1s ease-in;
+      -moz-transition: border .2s ease-out, background .1s ease-in;
+      -webkit-transition: border .2s ease-out, background .1s ease-in;
+      /* ...and now override with proper CSS property */
+      transition: border .2s ease-out, background .1s ease-in; }
 
 #page {
   grid-column: 2/14; }

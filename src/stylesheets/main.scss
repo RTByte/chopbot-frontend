@@ -6,25 +6,15 @@
 /* GLOBAL */
 body {
   font-family: 'Roboto', sans-serif;
-  -o-transition:color .2s ease-out, background 2s ease-in;
-  -ms-transition:color .2s ease-out, background 2s ease-in;
-  -moz-transition:color .2s ease-out, background 2s ease-in;
-  -webkit-transition:color .2s ease-out, background 2s ease-in;
-  /* ...and now override with proper CSS property */
-  transition:color .2s ease-out, background 2s ease-in;
-
-  -o-transition:border .2s ease-out, background 2s ease-in;
-  -ms-transition:border .2s ease-out, background 2s ease-in;
-  -moz-transition:border .2s ease-out, background 2s ease-in;
-  -webkit-transition:border .2s ease-out, background 2s ease-in;
-  /* ...and now override with proper CSS property */
-  transition:border .2s ease-out, background 2s ease-in;
 }
 #header {
   @include grid-header;
   nav {
+    a { @include colortrans; @include bordertrans; }
     @include flex;
-    button { background: $blurple-dark; cursor: pointer; }
+    button { background: $blurple-dark; cursor: pointer; @include colortrans;
+             @include bordertrans;
+    }
   }
 }
 
