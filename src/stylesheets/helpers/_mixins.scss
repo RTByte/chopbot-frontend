@@ -1,0 +1,9 @@
+@mixin grid-header {
+  grid-column: 1/16; }
+@mixin grid-page {
+  grid-column: 2/14; }
+@mixin flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
