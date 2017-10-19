@@ -77,6 +77,9 @@ table {
       top: 1px; }
     #header nav button span {
       font-size: 1.25rem; }
+@media all and (orientation: portrait) {
+  #header nav {
+    height: 100px; } }
 
 .blurple {
   background: #7289da; }
