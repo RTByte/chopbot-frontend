@@ -1,11 +1,14 @@
 @mixin grid-header {
   grid-column: 1/16; }
 @mixin grid-page {
-  grid-column: 2/14; }
-@mixin flex {
+  grid-column: 2/15; }
+@mixin flex-nav {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start; }
+@mixin flex {
+  display: flex;
+  flex-flow: column wrap; }
 @mixin colortrans {
   -o-transition:color .2s ease-out, background .1s ease-in;
   -ms-transition:color .2s ease-out, background .1s ease-in;

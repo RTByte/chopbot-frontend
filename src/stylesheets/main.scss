@@ -11,13 +11,32 @@ body {
   @include grid-header;
   nav {
     a { @include colortrans; @include bordertrans; }
-    @include flex;
+    @include flex-nav;
     button { background: $blurple-dark; cursor: pointer; @include colortrans;
              @include bordertrans;
     }
   }
 }
 
+#jumbotron {
+  @include grid-header;
+  .jumbotron {
+    height: 600px;
+    @include flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/discord1.png");
+    background-color: rgba(0, 0, 0, .5);
+    background-blend-mode: multiply;
+    img { height: 200px; position: relative; bottom: 40px; }
+    h1, h3 { color: white; }
+    h1 { font-size: 2rem; }
+    h3 { font-size: 1.2rem; padding: 16px 0 0 0; }
+  }
+}
+
 #page {
-  @include grid-page;
+  
 }
