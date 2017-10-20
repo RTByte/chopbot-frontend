@@ -5,7 +5,11 @@
 
 /* GLOBAL */
 body {
+  background: $gwhite;
   font-family: 'Roboto', sans-serif;
+  a { color: $blurple; }
+  b, strong { font-weight: 500; }
+  i, em { font-style: italic; }
 }
 #header {
   @include grid-span-all;
@@ -13,39 +17,15 @@ body {
     a { @include colortrans; @include bordertrans; }
     @include flex-nav;
     button { background: $blurple-dark; cursor: pointer; @include colortrans;
-             @include bordertrans;
-    }
-  }
+             @include bordertrans; } }
 }
 
 #page {
   @include grid-span-tq;
   #page-content { @include grid-span-all }
-  h2 { font-size: 2.25rem; color: $darkgrey; padding: 32px 0 16px 12px; }
-  p, a { font-size: 1.1rem; } p { padding: 12px 0; } p, ul { margin: 0 16px; }
+  h2 { font-size: 2.25rem; color: $darkgrey; padding: 32px 0 16px 12px; margin-top: 32px; }
+  p, a { font-size: 1.1rem; } p { padding: 12px 0; color: $grey } p, ul { margin: 0 16px; }
   ul { list-style: disc; margin: 0 36px; padding: 12px 0; } li { padding: 4px 0; }
-  form { padding: 16px; @include grid-span-all; }
-  button {
-    @include colortrans;
-    @include bordertrans;
-    background-color: transparent;
-    color: $blurple;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: 2px solid $blurple;
-    border-radius: 6px;
-    cursor: pointer;
-    width: 100%;
-    position: relative;
-    &:hover { background: $blurple; color: white; } }
-  input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
 }
 
 /* NARROWER DEVICES */

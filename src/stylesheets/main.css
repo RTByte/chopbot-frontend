@@ -55,9 +55,9 @@ table {
   #header nav a {
     text-decoration: none;
     padding: 20px 0px 16px 0;
-    border-top: 2px solid transparent; }
+    border-top: 1px solid transparent; }
     #header nav a:hover {
-      border-top: 2px solid white; }
+      border-top: 1px solid white; }
   #header nav span {
     color: white;
     font-size: 1.4rem;
@@ -77,6 +77,10 @@ table {
       top: 1px; }
     #header nav button span {
       font-size: 1.25rem; }
+
+a, button {
+  transition: color .2s ease-out, background .2s ease-in;
+  transition: border .2s ease-out, background .2s ease-in; }
 
 .blurple {
   background: #7289da; }
@@ -116,9 +120,67 @@ body, #page {
       font-size: 1.2rem;
       padding: 16px 0 0 0; }
 
+#page form {
+  padding: 16px;
+  grid-column: 1/16; }
+#page button {
+  -o-transition: color .2s ease-out, background .1s ease-in;
+  -ms-transition: color .2s ease-out, background .1s ease-in;
+  -moz-transition: color .2s ease-out, background .1s ease-in;
+  -webkit-transition: color .2s ease-out, background .1s ease-in;
+  /* ...and now override with proper CSS property */
+  transition: color .2s ease-out, background .1s ease-in;
+  -o-transition: border .2s ease-out, background .1s ease-in;
+  -ms-transition: border .2s ease-out, background .1s ease-in;
+  -moz-transition: border .2s ease-out, background .1s ease-in;
+  -webkit-transition: border .2s ease-out, background .1s ease-in;
+  /* ...and now override with proper CSS property */
+  transition: border .2s ease-out, background .1s ease-in;
+  background-color: transparent;
+  color: #7289da;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 2px solid #7289da;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  position: relative; }
+  #page button:hover {
+    background: #7289da;
+    color: white; }
+#page input[type=text], #page input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box; }
+  #page input[type=text] b, #page input[type=password] b {
+    font-weight: 500; }
+
+#page table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%; }
+#page tr:nth-child(even) {
+  background: #f2f2f2; }
+#page th, #page td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd; }
+#page th {
+  font-weight: 500; }
+
 /* GLOBAL */
 body {
+  background: #ebebeb;
   font-family: 'Roboto', sans-serif; }
+  body a {
+    color: #7289da; }
+  body b, body strong {
+    font-weight: 500; }
+  body i, body em {
+    font-style: italic; }
 
 #header {
   grid-column: 1/16; }
@@ -162,11 +224,13 @@ body {
   #page h2 {
     font-size: 2.25rem;
     color: #333;
-    padding: 32px 0 16px 12px; }
+    padding: 32px 0 16px 12px;
+    margin-top: 32px; }
   #page p, #page a {
     font-size: 1.1rem; }
   #page p {
-    padding: 12px 0; }
+    padding: 12px 0;
+    color: #444; }
   #page p, #page ul {
     margin: 0 16px; }
   #page ul {
@@ -175,41 +239,6 @@ body {
     padding: 12px 0; }
   #page li {
     padding: 4px 0; }
-  #page form {
-    padding: 16px;
-    grid-column: 1/16; }
-  #page button {
-    -o-transition: color .2s ease-out, background .1s ease-in;
-    -ms-transition: color .2s ease-out, background .1s ease-in;
-    -moz-transition: color .2s ease-out, background .1s ease-in;
-    -webkit-transition: color .2s ease-out, background .1s ease-in;
-    /* ...and now override with proper CSS property */
-    transition: color .2s ease-out, background .1s ease-in;
-    -o-transition: border .2s ease-out, background .1s ease-in;
-    -ms-transition: border .2s ease-out, background .1s ease-in;
-    -moz-transition: border .2s ease-out, background .1s ease-in;
-    -webkit-transition: border .2s ease-out, background .1s ease-in;
-    /* ...and now override with proper CSS property */
-    transition: border .2s ease-out, background .1s ease-in;
-    background-color: transparent;
-    color: #7289da;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: 2px solid #7289da;
-    border-radius: 6px;
-    cursor: pointer;
-    width: 100%;
-    position: relative; }
-    #page button:hover {
-      background: #7289da;
-      color: white; }
-  #page input[type=text], #page input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box; }
 
 /* NARROWER DEVICES */
 @media only screen and (max-width: 1000px) {
