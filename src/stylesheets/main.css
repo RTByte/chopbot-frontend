@@ -48,7 +48,6 @@ table {
 /* HEADER */
 #header nav {
   height: 60px;
-  position: -webkit-sticky;
   position: sticky;
   top: 0; }
   #header nav .a {
@@ -96,19 +95,10 @@ body, #page {
   grid-column: 1/16; }
   #jumbotron .jumbotron {
     height: 600px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
     background-position: center;
     background-image: url("../img/discord1.png");
@@ -133,22 +123,19 @@ body {
 #header {
   grid-column: 1/16; }
   #header nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start; }
+    flex-flow: row wrap;
+    justify-content: flex-start; }
     #header nav a {
       -o-transition: color .2s ease-out, background .1s ease-in;
+      -ms-transition: color .2s ease-out, background .1s ease-in;
+      -moz-transition: color .2s ease-out, background .1s ease-in;
       -webkit-transition: color .2s ease-out, background .1s ease-in;
       /* ...and now override with proper CSS property */
       transition: color .2s ease-out, background .1s ease-in;
       -o-transition: border .2s ease-out, background .1s ease-in;
+      -ms-transition: border .2s ease-out, background .1s ease-in;
+      -moz-transition: border .2s ease-out, background .1s ease-in;
       -webkit-transition: border .2s ease-out, background .1s ease-in;
       /* ...and now override with proper CSS property */
       transition: border .2s ease-out, background .1s ease-in; }
@@ -156,10 +143,14 @@ body {
       background: #5c73c2;
       cursor: pointer;
       -o-transition: color .2s ease-out, background .1s ease-in;
+      -ms-transition: color .2s ease-out, background .1s ease-in;
+      -moz-transition: color .2s ease-out, background .1s ease-in;
       -webkit-transition: color .2s ease-out, background .1s ease-in;
       /* ...and now override with proper CSS property */
       transition: color .2s ease-out, background .1s ease-in;
       -o-transition: border .2s ease-out, background .1s ease-in;
+      -ms-transition: border .2s ease-out, background .1s ease-in;
+      -moz-transition: border .2s ease-out, background .1s ease-in;
       -webkit-transition: border .2s ease-out, background .1s ease-in;
       /* ...and now override with proper CSS property */
       transition: border .2s ease-out, background .1s ease-in; }
@@ -189,10 +180,14 @@ body {
     grid-column: 1/16; }
   #page button {
     -o-transition: color .2s ease-out, background .1s ease-in;
+    -ms-transition: color .2s ease-out, background .1s ease-in;
+    -moz-transition: color .2s ease-out, background .1s ease-in;
     -webkit-transition: color .2s ease-out, background .1s ease-in;
     /* ...and now override with proper CSS property */
     transition: color .2s ease-out, background .1s ease-in;
     -o-transition: border .2s ease-out, background .1s ease-in;
+    -ms-transition: border .2s ease-out, background .1s ease-in;
+    -moz-transition: border .2s ease-out, background .1s ease-in;
     -webkit-transition: border .2s ease-out, background .1s ease-in;
     /* ...and now override with proper CSS property */
     transition: border .2s ease-out, background .1s ease-in;
@@ -214,8 +209,7 @@ body {
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
+    box-sizing: border-box; }
 
 /* NARROWER DEVICES */
 @media only screen and (max-width: 1000px) {
@@ -223,9 +217,11 @@ body {
     grid-column: 2/15; } }
 @media only screen and (max-width: 635px) {
   #header nav {
-    height: 110px; }
+    height: 120px; }
     #header nav button {
       margin: 0 11px; } }
 @media only screen and (max-width: 600px) {
   #page {
     grid-column: 1/16; } }
+
+/*# sourceMappingURL=main.css.map */
