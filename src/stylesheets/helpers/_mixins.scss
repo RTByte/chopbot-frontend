@@ -1,7 +1,11 @@
-@mixin grid-header {
+@mixin grid-span-all {
   grid-column: 1/16; }
-@mixin grid-page {
+@mixin grid-span-fr {
   grid-column: 2/15; }
+@mixin grid-span-half {
+  grid-column: 5/12; }
+@mixin grid-span-tq {
+  grid-column: 3/14; }
 @mixin flex-nav {
   display: flex;
   flex-flow: row wrap;

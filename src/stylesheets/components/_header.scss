@@ -15,11 +15,4 @@
              &:active { top: 1px; }
              span { font-size: 1.25rem; } }
   }
-  @media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    nav { height: 100px; }
-    span { font-size: 3rem; }
-  }
 }
