@@ -211,9 +211,17 @@ body {
     border: 1px solid #ccc;
     box-sizing: border-box; }
 
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+/* NARROWER DEVICES */
+@media only screen and (max-width: 1000px) {
   #page {
     grid-column: 2/15; } }
+@media only screen and (max-width: 635px) {
+  #header nav {
+    height: 110px; }
+    #header nav button {
+      margin: 0 11px; } }
+@media only screen and (max-width: 600px) {
+  #page {
+    grid-column: 1/16; } }
 
 /*# sourceMappingURL=main.css.map */

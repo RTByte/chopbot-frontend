@@ -48,10 +48,16 @@ body {
   }
 }
 
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    #page { @include grid-span-fr; }
+/* NARROWER DEVICES */
+@media only screen and (max-width: 1000px) {
+  #page { @include grid-span-fr; }
+}
+
+@media only screen and (max-width: 635px) {
+  #header { nav { height: 110px;
+                  button { margin: 0 11px; } } }
+}
+
+@media only screen and (max-width: 600px) {
+  #page { @include grid-span-all; }
 }
