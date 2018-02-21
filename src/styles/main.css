@@ -247,7 +247,7 @@ body {
           color: white; }
 
 @media only screen and (max-width: 1475px) {
-  #header, #landing, #main, #footer {
+  #header, #landing, #pageheader, #main, #footer {
     grid-column: 1/8; } }
 @media only screen and (max-width: 1100px) {
   #header .headernav a {
@@ -262,11 +262,11 @@ body {
   #main {
     flex-flow: column; } }
 @media only screen and (max-width: 550px) {
-  #landing .landing-text h1 {
+  #landing .landing-text h1, #pageheader .landing-text h1 {
     font-size: 2rem; }
-  #landing .landing-text h2 {
+  #landing .landing-text h2, #pageheader .landing-text h2 {
     font-size: 1.20rem; }
-  #landing img {
+  #landing img, #pageheader img {
     height: 200px; } }
 
 /*# sourceMappingURL=main.css.map */

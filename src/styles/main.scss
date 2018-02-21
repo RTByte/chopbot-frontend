@@ -192,7 +192,7 @@ body {
 
 // MEDIA queries
 @media only screen and (max-width: 1475px) {
-  #header, #landing, #main, #footer { grid-column: 1/8; }
+  #header, #landing, #pageheader, #main, #footer { grid-column: 1/8; }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -209,7 +209,7 @@ body {
 }
 
 @media only screen and (max-width: 550px) {
-  #landing {
+  #landing, #pageheader {
     .landing-text { h1 { font-size: 2rem; } h2 { font-size: 1.20rem; } }
     img { height: 200px; }
   }
