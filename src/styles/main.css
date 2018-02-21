@@ -259,7 +259,7 @@ body {
   #header .headernav span {
     display: none; }
 
-  #landing .landing-text {
+  #landing .landing-text, #pageheader .landing-text {
     align-items: center;
     text-align: center; }
 
