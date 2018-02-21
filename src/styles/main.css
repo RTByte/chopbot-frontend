@@ -259,6 +259,10 @@ body {
   #header .headernav span {
     display: none; }
 
+  #landing .landing-text {
+    align-items: center;
+    text-align: center; }
+
   #main {
     flex-flow: column; } }
 @media only screen and (max-width: 550px) {
