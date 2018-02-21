@@ -130,9 +130,13 @@ body {
     list-style-position: outside;
     font-size: 1.1rem;
     line-height: 1.5rem; }
+    #main .textsection ul li {
+      font-family: 'Roboto', sans-serif; }
   #main .getbotsection label {
-    color: #555; }
+    color: #555;
+    font-family: 'Roboto', sans-serif; }
   #main .getbotsection button {
+    font-family: 'Roboto', sans-serif;
     background: transparent;
     font-size: .85rem;
     color: #7289da;
@@ -147,6 +151,7 @@ body {
       background: #7289da;
       color: white; }
   #main .getbotsection input[type=text], #main .getbotsection input[type=email] {
+    font-family: 'Roboto', sans-serif;
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -163,7 +168,8 @@ body {
       border-collapse: collapse;
       table-layout: fixed;
       width: 97.5%;
-      margin: auto; }
+      margin: auto;
+      font-family: 'Roboto', sans-serif; }
     #main .docsection tr:nth-child(even) {
       background: #f1f3f5; }
     #main .docsection th, #main .docsection td {

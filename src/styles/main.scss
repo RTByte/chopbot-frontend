@@ -93,6 +93,7 @@ body {
   }
   .textsection {
     ul {
+      li { font-family: 'Roboto', sans-serif; }
       list-style-type: circle;
       list-style-position: outside;
       font-size: 1.1rem;
@@ -100,8 +101,9 @@ body {
     }
   }
   .getbotsection {
-    label { color: $subtext; }
+    label { color: $subtext; font-family: 'Roboto', sans-serif; }
     button {
+      font-family: 'Roboto', sans-serif;
       background: transparent;
       font-size: .85rem;
       color: $accent;
@@ -115,6 +117,7 @@ body {
       &:hover { background: $accent; color: white; }
     }
     input[type=text], input[type=email] {
+      font-family: 'Roboto', sans-serif;
       width: 100%;
       padding: 12px 20px;
       margin: 8px 0;
@@ -124,7 +127,7 @@ body {
     }
   }
   .docsection {
-    table { border-collapse: collapse; table-layout: fixed; width: 97.5%; margin: auto; } tr:nth-child(even) { background: $bg; } th, td { padding: 8px; border-bottom: 1px solid #ddd; }
+    table { border-collapse: collapse; table-layout: fixed; width: 97.5%; margin: auto; font-family: 'Roboto', sans-serif; } tr:nth-child(even) { background: $bg; } th, td { padding: 8px; border-bottom: 1px solid #ddd; }
     th { font-weight: 500; }
 
     transition: all .2s;
