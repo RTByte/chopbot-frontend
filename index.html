@@ -26,6 +26,7 @@
     <!-- CSS & JS -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Ubuntu:400,500" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@2.2.3/dist/tippy.all.min.js"></script>
     <script defer src="static/fontawesome/js/fontawesome-all.js"></script>
     <link rel="stylesheet" href="src/styles/main.css"/>
     <script src="src/js/index.js"></script>
@@ -38,9 +39,9 @@
         <a href="documentation.html"><i class="far fa-list-alt"></i> <span>Documentation</span></a>
       </nav>
       <nav class="headernav navright navsides">
-        <a href="https://discord.gg/v8vdQjv" target="_blank"><i class="fab fa-discord"></i></a>
-        <a href="https://github.com/ChopBot/chopbot" target="_blank"><i class="fab fa-github"></i></a>
-        <a><i class="far fa-sign-in-alt"></i></a>
+        <a href="https://discord.gg/v8vdQjv" target="_blank" id="tooltip" title="Discord" data-tippy-arrow="true"><i class="fab fa-discord"></i></a>
+        <a href="https://github.com/ChopBot/chopbot" target="_blank" id="tooltip" title="GitHub" data-tippy-arrow="true"><i class="fab fa-github"></i></a>
+        <a id="tooltip" title="Sign in" data-tippy-arrow="true"><i class="far fa-sign-in-alt"></i></a>
       </nav>
     </header>
     <div id="landing">
@@ -73,13 +74,13 @@
         <p>If you run a Rooster Teeth-related Discord server, and you'd like to use ChopBot, get in touch with us!</p>
         <form>
           <label>Server name</label>
-          <input type="text" placeholder="My community name" name="sname" required/>
+          <input type="text" placeholder="My community name" name="servername" required/>
 
           <label>Your Discord name</label>
-          <input type="text" placeholder="Username#1337" name="pname" required/>
+          <input type="text" placeholder="Username#1337" name="name" required/>
 
           <label>Your email</label>
-          <input type="email" placeholder="person@mail.com" name="pemail" required/>
+          <input type="email" placeholder="person@mail.com" name="email" required/>
 
           <label>Optional message</label>
           <input type="text" placeholder="Optional message goes here" name="message"/>
@@ -102,7 +103,7 @@
           </div>
         </div>
         <div class="copy">
-          <p><i class="far fa-copyright"></i> 2018 - Rasmus Gerdin</p>
+          <p><i class="far fa-copyright"></i> 2018 - Rasmus Gerdin, Michael Cumbers, Killian Higgins</p>
         </div>
       </div>
       <div class="footerright footersides">
@@ -126,4 +127,8 @@
       </div>
     </footer>
   </body>
+  <script>
+    const toolTip = document.querySelectorAll('#tooltip');
+    tippy(toolTip);
+  </script>
 </html>

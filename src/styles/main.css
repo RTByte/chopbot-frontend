@@ -59,14 +59,15 @@ body {
     #landing .landing-text h1, #landing .landing-text h2 {
       font-family: 'Ubuntu', sans-serif;
       font-weight: 500;
-      color: white; }
+      color: white;
+      text-shadow: 8px 9px 16px rgba(0, 0, 0, 0.1); }
     #landing .landing-text h1 {
       font-size: 2.35rem; }
     #landing .landing-text h2 {
       font-size: 1.40rem; }
   #landing img {
     height: 250px;
-    filter: drop-shadow(11px 12px 14px rgba(34, 34, 34, 0.25)); }
+    filter: drop-shadow(8px 9px 16px rgba(0, 0, 0, 0.1)); }
 
 #pageheader {
   grid-row: 2;
@@ -91,7 +92,8 @@ body {
     #pageheader .landing-text h1, #pageheader .landing-text h2 {
       font-family: 'Ubuntu', sans-serif;
       font-weight: 500;
-      color: white; }
+      color: white;
+      text-shadow: 8px 9px 16px rgba(0, 0, 0, 0.1); }
     #pageheader .landing-text h1 {
       font-size: 2.35rem; }
     #pageheader .landing-text h2 {
