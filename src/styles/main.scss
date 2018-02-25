@@ -69,6 +69,7 @@ body {
     display: flex;
     flex-flow: column;
     align-items: center;
+    text-align: center;
     h1, h2 { font-family: 'Ubuntu', sans-serif; font-weight: 500; color: white; text-shadow: 8px 9px 16px rgba(#000000, 0.10); }
     h1 { font-size: 2.35rem; } h2 { font-size: 1.40rem; }
   }
@@ -84,7 +85,6 @@ body {
     padding: 10px 20px;
     h2 { font-family: 'Ubuntu', sans-serif; font-weight: 500; font-size: 1.45rem; }
     p { font-family: 'Roboto', sans-serif; font-size: 1.1rem; line-height: 1.5rem; padding: 4px; }
-    a:hover { text-decoration: underline; }
     hr { border: 1px solid #999; }
     flex: 1;
     align-self: flex-start;
@@ -92,12 +92,41 @@ body {
     span { color: $accent; }
   }
   .textsection {
+    h3 { font-family: 'Roboto', sans-serif; }
+    a:hover { text-decoration: underline; }
     ul {
       li { font-family: 'Roboto', sans-serif; }
       list-style-type: circle;
       list-style-position: outside;
       font-size: 1.1rem;
       line-height: 1.5rem;
+    }
+    .listcontr {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+      .contributors {
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        img { border-radius: 50%; padding: 18px; }
+        .imgtext {
+          display: flex;
+          align-items: center;
+        }
+        .plinks {
+          display: flex;
+          align-items: center;
+          a {
+            transition: all .2s;
+            color: $subtext;
+            padding: 8px;
+            font-size: 2rem;
+            &:hover { color: $accent; }
+          }
+        }
+      }
     }
   }
   .getbotsection {
@@ -205,16 +234,21 @@ body {
 
 @media only screen and (max-width: 900px) {
   #header { .headernav {
-    .navleft { float: 5; }
+    .navleft { flex: 5; }
     a { font-size: 1.5rem; }
    }
- }
+  }
 }
 
 @media only screen and (max-width: 790px) {
   #header { .headernav { span { display: none; } } }
   #landing, #pageheader { .landing-text { align-items: center; text-align: center; } }
   #main { flex-flow: column; }
+  #main { .textsection { .listcontr { .contributors {
+     img {
+       height: 200px;
+     }
+   } } } }
 }
 
 @media only screen and (max-width: 550px) {
@@ -222,4 +256,9 @@ body {
     .landing-text { h1 { font-size: 2rem; } h2 { font-size: 1.20rem; } }
     img { height: 200px; }
   }
+  #main { .textsection { .listcontr { .contributors {
+     .imgtext {
+       flex-flow: column;
+     }
+   } } } }
 }
