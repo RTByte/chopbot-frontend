@@ -11,6 +11,16 @@ body {
     color: #444; }
   body p {
     color: #555; }
+  body a::-moz-selection, body h1::-moz-selection, body h2::-moz-selection, body h3::-moz-selection, body p::-moz-selection, body th::-moz-selection,
+  body td::-moz-selection, body li::-moz-selection, body label::-moz-selection, body input::-moz-selection,
+  body button::-moz-selection, body i::-moz-selection, body b::-moz-selection, body em::-moz-selection, body strong::-moz-selection, body span::-moz-selection {
+    background: rgba(114, 137, 217, 0.75);
+    color: white; }
+  body a::selection, body h1::selection, body h2::selection, body h3::selection, body p::selection, body th::selection,
+  body td::selection, body li::selection, body label::selection, body input::selection,
+  body button::selection, body i::selection, body b::selection, body em::selection, body strong::selection, body span::selection {
+    background: rgba(114, 137, 217, 0.75);
+    color: white; }
 
 #header {
   grid-row: 1;

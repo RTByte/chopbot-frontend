@@ -10,6 +10,12 @@ body {
   a { color: $accent; text-decoration: none; }
   h1, h2, h3 { color: $text; }
   p { color: $subtext; }
+  a, h1, h2, h3, p, th,
+  td, li, label, input,
+  button, i, b, em, strong, span {
+    &::-moz-selection { background: rgba(#7289d9, .75); color: white; }
+    &::selection { background: rgba(#7289d9, .75); color: white; }
+  }
 }
 
 #header {
