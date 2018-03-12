@@ -11,8 +11,8 @@ body {
   h1, h2, h3 { color: $text; }
   p { color: $subtext; }
   a, h1, h2, h3, p, th,
-  td, li, label, input,
-  button, i, b, em, strong, span {
+  td, li, label, button,
+  i, b, em, strong, span {
     &::-moz-selection { background: rgba(#7289d9, .75); color: white; }
     &::selection { background: rgba(#7289d9, .75); color: white; }
   }
@@ -31,7 +31,7 @@ body {
     .navright { justify-content: flex-end; }
     a {
       transition: all .2s;
-      padding: 0 25px;
+      margin: 0 25px;
       font-size: 1.75rem;
       color: $header-text;
       &:hover { color: $accent; text-shadow: 2px 2px 3px rgba(#c6c6c6, 0.2); }
@@ -194,9 +194,9 @@ body {
     .madewithlove {
       display: flex;
       align-items: center;
-      padding: 24px 18px;
+      margin: 24px 18px;
       .madewithicon {
-        padding: 0 12px;
+        margin: 0 12px;
         span { color: #868e96; font-size: 4.5rem; }
       }
       .madewithtext {
@@ -207,7 +207,7 @@ body {
       }
     }
     .copy {
-      padding: 18px 30px;
+      margin: 18px 30px;
       justify-content: flex-end;
       p { font-size: .75rem; color: #797e83; }
     }
@@ -215,11 +215,12 @@ body {
   .footerright {
     display: flex;
     align-items: flex-start;
-    .footerlists { flex: 1; padding: 16px 28px; }
+    .footerlists { flex: 1; margin: 16px 28px; }
     h3 { font-size: 1rem; }
     ul {
       list-style: none;
       padding: 0;
+      li { margin: 4px; }
       a {
         color: #868e96;
         transition: all .2s;
@@ -235,7 +236,7 @@ body {
 }
 
 @media only screen and (max-width: 1100px) {
-  #header { .headernav { a { padding: 0 10px; } } }
+  #header { .headernav { a { margin: 0 10px; } } }
 }
 
 @media only screen and (max-width: 900px) {
@@ -249,7 +250,8 @@ body {
 @media only screen and (max-width: 790px) {
   #header { .headernav { span { display: none; } } }
   #landing, #pageheader { .landing-text { align-items: center; text-align: center; } }
-  #main { flex-flow: column; }
+  #main { flex-flow: column; align-items: center; }
+  #footer { flex-flow: column-reverse; align-items: center; }
   #main { .textsection { .listcontr { .contributors {
      img {
        height: 200px;

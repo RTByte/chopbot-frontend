@@ -12,13 +12,13 @@ body {
   body p {
     color: #555; }
   body a::-moz-selection, body h1::-moz-selection, body h2::-moz-selection, body h3::-moz-selection, body p::-moz-selection, body th::-moz-selection,
-  body td::-moz-selection, body li::-moz-selection, body label::-moz-selection, body input::-moz-selection,
-  body button::-moz-selection, body i::-moz-selection, body b::-moz-selection, body em::-moz-selection, body strong::-moz-selection, body span::-moz-selection {
+  body td::-moz-selection, body li::-moz-selection, body label::-moz-selection, body button::-moz-selection,
+  body i::-moz-selection, body b::-moz-selection, body em::-moz-selection, body strong::-moz-selection, body span::-moz-selection {
     background: rgba(114, 137, 217, 0.75);
     color: white; }
   body a::selection, body h1::selection, body h2::selection, body h3::selection, body p::selection, body th::selection,
-  body td::selection, body li::selection, body label::selection, body input::selection,
-  body button::selection, body i::selection, body b::selection, body em::selection, body strong::selection, body span::selection {
+  body td::selection, body li::selection, body label::selection, body button::selection,
+  body i::selection, body b::selection, body em::selection, body strong::selection, body span::selection {
     background: rgba(114, 137, 217, 0.75);
     color: white; }
 
@@ -41,7 +41,7 @@ body {
     justify-content: flex-end; }
   #header a {
     transition: all .2s;
-    padding: 0 25px;
+    margin: 0 25px;
     font-size: 1.75rem;
     color: #444; }
     #header a:hover {
@@ -255,9 +255,9 @@ body {
     #footer .footerleft .madewithlove {
       display: flex;
       align-items: center;
-      padding: 24px 18px; }
+      margin: 24px 18px; }
       #footer .footerleft .madewithlove .madewithicon {
-        padding: 0 12px; }
+        margin: 0 12px; }
         #footer .footerleft .madewithlove .madewithicon span {
           color: #868e96;
           font-size: 4.5rem; }
@@ -270,7 +270,7 @@ body {
           color: #868e96;
           margin: 6px 0; }
     #footer .footerleft .copy {
-      padding: 18px 30px;
+      margin: 18px 30px;
       justify-content: flex-end; }
       #footer .footerleft .copy p {
         font-size: .75rem;
@@ -280,12 +280,14 @@ body {
     align-items: flex-start; }
     #footer .footerright .footerlists {
       flex: 1;
-      padding: 16px 28px; }
+      margin: 16px 28px; }
     #footer .footerright h3 {
       font-size: 1rem; }
     #footer .footerright ul {
       list-style: none;
       padding: 0; }
+      #footer .footerright ul li {
+        margin: 4px; }
       #footer .footerright ul a {
         color: #868e96;
         transition: all .2s; }
@@ -297,7 +299,7 @@ body {
     grid-column: 1/8; } }
 @media only screen and (max-width: 1100px) {
   #header .headernav a {
-    padding: 0 10px; } }
+    margin: 0 10px; } }
 @media only screen and (max-width: 900px) {
   #header .headernav .navleft {
     flex: 5; }
@@ -312,7 +314,12 @@ body {
     text-align: center; }
 
   #main {
-    flex-flow: column; }
+    flex-flow: column;
+    align-items: center; }
+
+  #footer {
+    flex-flow: column-reverse;
+    align-items: center; }
 
   #main .textsection .listcontr .contributors img {
     height: 200px; } }
