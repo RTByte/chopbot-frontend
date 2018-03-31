@@ -34,7 +34,10 @@ body {
       margin: 0 25px;
       font-size: 1.75rem;
       color: $header-text;
+      display: flex;
+      align-items: center;
       &:hover { color: $accent; text-shadow: 2px 2px 3px rgba(#c6c6c6, 0.2); }
+      span { font-size: 1.5rem; padding: 0 5px; }
     }
 }
 
@@ -242,7 +245,7 @@ body {
 @media only screen and (max-width: 900px) {
   #header { .headernav {
     .navleft { flex: 5; }
-    a { font-size: 1.5rem; }
+    a { font-size: 1.5rem; span { font-size: 1.25rem; } }
    }
   }
 }
